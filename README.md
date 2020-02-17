@@ -23,8 +23,6 @@ Go to [Twitter Apps](https://apps.twitter.com/) to create your app so that you c
 Here is how callbacks would look like:
 ![callbacks](https://github.com/GoldenOwlAsia/react-native-twitter-signin/blob/master/Example/img/callbacks.png?raw=true)
 
-From Twitter Kit 3.3, Fabric is no longer required.
-
 ## Setup
 
 Firstly, install the npm package:
@@ -69,17 +67,10 @@ Firstly, install the npm package:
  // Podfile
  target 'MyApp' do
    # use_frameworks!
-   pod 'TwitterKit', '~> 3.3.0'
+   pod 'TwitterKit5'
  end
  ```
  - Run `pod install`
-
- #### Manually
-
- - Download TwitterKit 3.3 from here https://ton.twimg.com/syndication/twitterkit/ios/3.3.0/Twitter-Kit-iOS.zip
- - Add TwitterKit, TwitterCore and 2 other bundle files into your root folder in Xcode
- - In `Build Phases → Link Binary with libraries` add `Twitter.framework` and `LibRBTwitterSignin.a`
-
 
 ### Android
 
